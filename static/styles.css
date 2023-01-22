@@ -1,0 +1,327 @@
+/* hamburger menu   */
+
+header {
+    padding: 0 10px;
+    width: 100%;
+    height: 70px;
+    background: #FFDDD2;
+  
+}
+.header-left, .header-right {
+    float: left;
+    height: 100%;
+}
+.header-left {
+    width: 10%;
+    text-align: center;
+}
+.header-right {
+    width: 80%;
+}
+.header-left img {
+    height: 40px;
+    margin-top: 15px;
+}
+.logo {
+    border-radius: 100%;
+}
+.header-right > a {
+    display: none;
+}
+.header-right ul {
+    /* list-style: none; */
+    height: 100%;
+    text-align: right;
+}
+.header-right ul li {
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 70px;
+    height: 100%;
+}
+.header-right ul li a {
+    color: #565A5C;
+    text-decoration: none;
+}
+.header-right ul li a.cta {
+    padding: 10px 20px;
+    color: white;
+    background: #E78D5C;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    display: none;
+    padding: 10px;
+    width: 50%;
+    height: 40%;
+    min-width: 50vw;
+    min-height: 10vh;
+    background-color: #781D42;
+}
+.hamburger-menu ul {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style: none;
+}
+.hamburger-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.close {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+@media screen and (max-width: 1000px)
+{
+    .header-right ul {
+        display: none;
+    }
+    .header-right > a {
+        display: block;
+        height: 100%;
+        line-height: 70px;
+        float: right;
+        color: lightgrey;
+        font-size: 20px;
+    }
+
+    .hamburger-menu.active {
+        display: block;
+    }
+}
+
+.student-options {
+    font-size: small;
+}
+
+.name {
+    padding-top: 1%;
+    font-family: 'Lobster', cursive;
+}
+
+/* navigation bar styles */
+
+.navbar {
+    background-color: #BFEAF5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-item {
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.color {
+    color:#781D42;
+    font-family: 'Lobster', cursive;
+}
+
+.nav-link:hover {
+    transform: scale(1.3);
+}
+
+.fa-user {
+    padding-right: 2%;
+}
+.fa-bars {
+    color:#781D42;
+}
+
+
+.school_name {
+    position: absolute;
+    top: 50%;
+    left:17%;
+    font-family: 'Lobster', cursive;
+    color: #FFDDD2;
+    font-size: 10vw;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+   
+}
+
+.school_word {
+    position: absolute;
+    top: 50%;
+    right:20%;
+    font-family: 'Lobster', cursive;
+    color:#781D42;
+    font-size: 10vw;
+    
+}
+
+/* home page styles */
+
+.logo-container {
+    
+    max-width:10px;
+    height: auto;
+}
+body {
+    background-color: #FFDDD2;
+
+}
+
+.home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
+.home-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: calc(100vh - 56px);
+    width: 100%;
+    gap: 2%;
+    background-color: #781D42;
+
+}
+
+.home-word {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 50%;
+    background-color: #03C988;
+    padding-top: 25%;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+}
+
+.image-container {
+    display: flex;
+    height: 100%;
+    /* width: 50%; */
+    float: right;
+    padding-left: 50%;
+}
+
+/* section two */
+.section-two {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 18rem;
+    margin: 2%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flashes {
+    color: red;
+}
+
+/* button styles */
+.wtf-form input[type=submit], .wtf-form button[type=submit] {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #781D42;
+   
+    color: rgb(255, 251, 251);
+}
+
+.wtf-form input[type=submit]:hover, .wtf-form button[type=submit]:hover {
+    transform: scale(1.02);
+    background-color: #BFEAF5;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Lobster', cursive;
+}
+
+/* login page styles */
+.reset {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.wtf-form {
+    padding: 10% 2% 0%;
+}
+
+
+/* students table */
+#students {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #atudents td, #atudents th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #students tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #students  tr:hover {background-color: #ddd;}
+  
+  #students  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #781D42;
+    color: white;
+  }
+
+.information {
+    padding: 2%;
+}
+
+/* footer styles */
+.footer {
+    background-color: #781D42;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 30px;
+   
+}
+
+.footer-word {
+    width: 80%;
+    align-items: center;
+    padding-left: 20%;
+    margin-top: 20%;
+}
+
+.footer-text {
+    color: #FFDDD2
+}
+
+
+#menu {
+    display: none;
+  }
+  
+.word {
+    font-family: 'Lobster', cursive;
+    color: #781D42;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+

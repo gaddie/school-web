@@ -1,0 +1,45 @@
+{% include "header.html" %}
+<body>
+    {% if current_user.is_authenticated: %}
+    <div class="name">
+        <i class="fa-solid fa-user"></i>{{current_user.f_name}}
+    </div>
+    {% endif %}
+    <div class="container information">
+        <table id="students"> 
+            <tr>
+            <th>Date</th>
+            <th>Code</th>
+            <th>Amount</th>
+            </tr>
+            <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            </tr>
+            <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="container information">
+        <table id="students"> 
+
+            <tr>
+            <th>Balance</th>
+            <th>balance</th>
+        
+            </tr>
+           
+        </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="static/main.js"></script>
+
+</body>
+{% include "footer.html" %}
